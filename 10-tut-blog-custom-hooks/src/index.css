@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efefef;
+  display: flex;
+}
+
+#root {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  color: #3F3E3F;
+  box-shadow: 0 0 15px gray;
+}
+
+.Header,
+.Footer {
+  width: 100%;
+  background-color: skyblue;
+  padding: 1rem;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  font-size: 2rem;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #3F3E3F;
+  padding: 0 0 0 0.5rem;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm {
+  width: 50%;
+}
+
+.searchForm input[type="text"] {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.Nav ul {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+}
+
+.Nav ul li {
+  list-style: none;
+  flex-grow: 1;
+  padding: 1rem;
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+li:hover,
+li:hover a {
+  background-color: #efefef;
+  color: #3F3E3F;
+}
+
+li a,
+.post a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* main {
+  min-height: calc(100vh - 240px);
+} */
+
+.Home,
+.NewPost,
+.PostPage,
+.About,
+.Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.post:first-child {
+  margin-top: 0;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.postDate {
+  padding: 0.25rem 0;
+}
+
+.postBody {
+  margin-top: 15px;
+  padding-bottom: 2rem;
+}
+
+.post button {
+  height: 48px;
+  border-radius: 0.25rem;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: red;
+  color: #efefef;
+}
+
+.editButton {
+  background-color: #3F3E3F;
+  color: #efefef;
+  margin-right: 0.5rem;
+}
+
+.post p,
+.Missing p {
+  padding-top: 1rem;
+}
+
+.post p a {
+  text-decoration: underline;
+  color: #3F3E3F;
+}
+
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.newPostForm input[type="text"] {
+  height: 48px;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0 0.25rem;
+}
+
+.newPostForm textarea {
+  height: 100px;
+  outline: none;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.newPostForm button {
+  height: 48px;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About p {
+  font-size: 1rem;
+}

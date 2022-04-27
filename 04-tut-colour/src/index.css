@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 36px;
+}
+
+body {
+  min-height: 100vh;  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;  
+  flex-direction: column;
+  align-items: center;
+}
+
+.square{  
+  display: grid;
+  place-content: center;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 0.25rem;  
+  box-shadow: 2px 2px 5px #cecece;
+}
+
+.colorForm{
+  width: 300px;
+  /* display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+  border-bottom: 1px solid #eee; */
+}
+
+.colorForm label{
+  position: absolute;
+  left: -99999px;
+}
+
+.colorForm input[type="text"]{
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px #cecece;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.colorForm button{
+  height: 48px;
+  width: 100%;
+  background-color: green;
+  color:#eee;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 0.5rem;
+}

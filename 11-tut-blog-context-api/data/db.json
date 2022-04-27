@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "datetime": "July 01, 2021 11:17:36 AM",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+      "id": 3,
+      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+      "datetime": "August 04, 2021 5:57:56 PM",
+      "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    },
+    {
+      "id": 5,
+      "title": "My Edited Test Post",
+      "datetime": "April 25, 2022 10:43:13 PM",
+      "body": "This is a new post created and edited using axios api."
+    },
+    {
+      "id": 6,
+      "title": "Second post",
+      "datetime": "April 25, 2022 10:44:19 PM",
+      "body": "This is my second post!"
+    },
+    {
+      "id": 7,
+      "title": "Testing context",
+      "datetime": "April 26, 2022 9:12:43 AM",
+      "body": "Testing data context concepts."
+    },
+    {
+      "id": 8,
+      "title": "My Test Post 1100",
+      "datetime": "April 26, 2022 9:49:09 AM",
+      "body": "Testing new editing posts after refactoring new post component."
+    }
+  ]
+}
